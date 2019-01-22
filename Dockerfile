@@ -1,7 +1,7 @@
 FROM python:2.7-alpine
 RUN apk update && \
     apk add python python-dev libffi-dev gcc make musl-dev py-pip mysql-client git openssl-dev
-
+ENV DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
 WORKDIR /opt/CTFd
 RUN mkdir -p /opt/CTFd
 
