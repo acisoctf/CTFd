@@ -63,7 +63,7 @@ class Config(object):
         http://pythonhosted.org/Flask-Caching/#configuring-flask-caching
     '''
     SECRET_KEY = os.getenv('SECRET_KEY') or key
-    DATABASE_URL = os.getenv('DATABASE_URL') or 'mysql+pymysql://root:ctfdpass@5.101.72.235/ctfd'.format(os.path.dirname(os.path.abspath(__file__)))
+    DATABASE_URL = os.getenv('DATABASE_URL') or 'mysql+pymysql://root:ctfd@5.101.72.235/ctfd'.format(os.path.dirname(os.path.abspath(__file__)))
     REDIS_URL = os.getenv('REDIS_URL')
 
     SQLALCHEMY_DATABASE_URI = DATABASE_URL
