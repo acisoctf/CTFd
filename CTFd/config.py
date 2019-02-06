@@ -62,8 +62,8 @@ class Config(object):
         e.g. redis://user:password@localhost:6379
         http://pythonhosted.org/Flask-Caching/#configuring-flask-caching
     '''
-    SECRET_KEY = os.getenv('SECRET_KEY') or key
-    DATABASE_URL = os.getenv('DATABASE_URL') or 'mysql+pymysql://root:ctfd@5.101.72.235/ctfd'.format(os.path.dirname(os.path.abspath(__file__)))
+    SECRET_KEY = '[eqcjcbt,kfy'
+    DATABASE_URL = os.getenv('DATABASE_URL') or 'mysql+pymysql://root:ctfd@5.101.72.233/ctfd'.format(os.path.dirname(os.path.abspath(__file__)))
     REDIS_URL = os.getenv('redis://user:password@5.101.72.233:6379')
 
     SQLALCHEMY_DATABASE_URI = DATABASE_URL
